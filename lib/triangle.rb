@@ -10,7 +10,6 @@ class Triangle
   end
 
   def kind
-    # if first + second
     if first = second = third
       return :equilateral
     elsif
