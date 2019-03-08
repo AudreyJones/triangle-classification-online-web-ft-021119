@@ -23,13 +23,13 @@ class Triangle
   #       "We have a valid triangle!"
   #     end
   #   }
-  # 
-  # 
+  #
+  #
   # end
 
   def kind
     boolean_array.each {|i|
-      if 
+      if
     }
     if valid?
     else #test for types of triangles!
