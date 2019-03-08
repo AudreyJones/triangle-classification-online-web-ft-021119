@@ -10,6 +10,7 @@ class Triangle
   end
 # Can we create a separate method testing for validity and then implement that in #kind ?
   def valid?
+    binding.pry
     if (first <= 0) || (second <= 0) || (third <= 0)
       begin                                                     #raise the custom error
         raise TriangleError
