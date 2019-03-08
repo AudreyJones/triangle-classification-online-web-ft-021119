@@ -7,13 +7,13 @@ class Triangle
     @first = first
     @second = second
     @third = third
-    @inequality = (first + second > third) || (first + third > second) || (second + third > first)
+    @inequality = [(first + second > third), (first + third > second), (second + third > first)]
   end
 
 # Can we create a separate method testing for validity and then implement that in #kind ?
   def valid?
-
-    if
+    
+    if @inequality == false
       begin                                                     #raise the custom error
         raise TriangleError
       rescue TriangleError => error
