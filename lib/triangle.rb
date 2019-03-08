@@ -18,6 +18,7 @@ class Triangle
       end
     elsif
   end
+
   def kind
     if valid?
     else #test for types of triangles!
