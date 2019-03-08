@@ -16,7 +16,8 @@ class Triangle
       rescue TriangleError => error
         puts error.message
       end
-    elsif
+    elsif 
+    end
   end
 
   def kind
