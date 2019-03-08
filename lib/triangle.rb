@@ -12,7 +12,7 @@ class Triangle
 
 # Can we create a separate method testing for validity and then implement that in #kind ?
   def valid?
-    @inequality.each {|i|
+    boolean_array = @inequality.map {|i|
       if i == false
         begin                                                     #raise the custom error
           raise TriangleError
