@@ -25,7 +25,10 @@ class Triangle
       elsif (first != second) || (second != third) || (first != third)
         return :scalene
       else
-        "This triangle is illegal"
+        begin
+          raise TriangleError
+        rescue TriangleError => error
+          puts error.message
       end
     end
   end
