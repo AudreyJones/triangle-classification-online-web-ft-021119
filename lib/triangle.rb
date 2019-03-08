@@ -7,7 +7,8 @@ class Triangle
     @first = first
     @second = second
     @third = third
-    @inequality = [(first + second > third), (first + third > second), (second + third > first)]
+    # @inequality = 
+    # [(first + second > third), (first + third > second), (second + third > first)]
   end
 
 # Can we create a separate method testing for validity and then implement that in #kind ?
@@ -30,7 +31,8 @@ class Triangle
   def kind
     array = [first,second,third]
     array_sorted = array.sort
-    if
+    if array_sorted.include?(0) || (array_sorted[0] + array_sorted[1] <= array_sorted[2])
+      
     else #test for types of triangles!
       if (first == second) && (first == third)
         return :equilateral
