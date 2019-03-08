@@ -17,7 +17,7 @@ class Triangle
       rescue TriangleError => error
         puts error.message
       end
-    elsif #test for types of triangles!
+    else #test for types of triangles!
     #   first = second = third
     #   return :equilateral
     # elsif
