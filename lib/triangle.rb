@@ -17,6 +17,7 @@ class Triangle
         puts error.message
       end
     end
+    binding.pry
   end
 
   def kind
