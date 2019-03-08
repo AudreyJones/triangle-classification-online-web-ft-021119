@@ -18,7 +18,7 @@ class Triangle
       end
     elsif
   end
-
+  
   def kind
     if valid?
     else #test for types of triangles!
@@ -28,12 +28,6 @@ class Triangle
         return :isosceles
       elsif (first != second) || (second != third) || (first != third)
         return :scalene
-      elsif (first == 0) && (second == 0) && (third == 0)
-        begin
-          raise TriangleError
-        rescue TriangleError => error
-          puts error.message
-        end
       end
     end
   end
