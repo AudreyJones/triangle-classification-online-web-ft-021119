@@ -30,7 +30,7 @@ class Triangle
   def kind
     array = [first,second,third]
     array_sorted = array.sort
-    if 
+    if
     else #test for types of triangles!
       if (first == second) && (first == third)
         return :equilateral
