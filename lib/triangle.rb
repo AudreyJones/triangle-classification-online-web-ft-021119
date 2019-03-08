@@ -29,6 +29,7 @@ class Triangle
 
   def kind
     array = [first,second,third]
+    array_sorted = array.sort
     if valid?
     else #test for types of triangles!
       if (first == second) && (first == third)
