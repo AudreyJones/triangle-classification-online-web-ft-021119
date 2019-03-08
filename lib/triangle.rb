@@ -24,6 +24,8 @@ class Triangle
         return :isosceles
       elsif (first != second) || (second != third) || (first != third)
         return :scalene
+      else
+        "This triangle is illegal"
       end
     end
   end
