@@ -22,6 +22,7 @@ class Triangle
   end
 
   def kind
+    binding.pry
     if valid?
     else #test for types of triangles!
       if (first == second) && (first == third)
