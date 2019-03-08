@@ -18,6 +18,7 @@ class Triangle
         puts error.message
       end
     else
+      "We have a valid triangle!"
     end
   end
 
