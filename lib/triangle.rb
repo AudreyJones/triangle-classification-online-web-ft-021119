@@ -24,8 +24,6 @@ class Triangle
     #   return :isosceles
     # elsif
     #   return :scalene
-    else
-
     end
   end
 
