@@ -24,7 +24,7 @@ class Triangle
         return :isosceles
       elsif (first != second) || (second != third) || (first != third)
         return :scalene
-      else
+      elsif (first == 0) && (second == 0) && (third == 0)
         begin
           raise TriangleError
         rescue TriangleError => error
