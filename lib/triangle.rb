@@ -10,7 +10,7 @@ class Triangle
   end
 
   def kind
-    if (first || second || third <= 0)#the triangle is invalid
+    if #the triangle is invalid
       #raise the custom error
       begin
         raise TriangleError
