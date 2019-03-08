@@ -10,18 +10,22 @@ class Triangle
   end
 
   def kind
-    if first = second = third
+    if #the triangle is invalid
+      #raise the custom error
+      begin
+        raise TriangleError
+      rescue TriangleError => error
+        puts error.message
+      end
+
+      first = second = third
       return :equilateral
     elsif
       return :isosceles
     elsif
       return :scalene
     else
-      begin
-        raise TriangleError
-      rescue TriangleError => error
-        puts error.message
-      end
+      
     end
   end
 
