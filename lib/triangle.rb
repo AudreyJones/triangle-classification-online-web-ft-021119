@@ -23,9 +23,7 @@ class Triangle
   end
 
   def kind
-    # binding.pry
     if valid?
-      binding.pry
     else #test for types of triangles!
       if (first == second) && (first == third)
         return :equilateral
