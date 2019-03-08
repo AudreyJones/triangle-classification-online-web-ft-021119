@@ -17,13 +17,13 @@ class Triangle
       rescue TriangleError => error
         puts error.message
       end
-
-      first = second = third
-      return :equilateral
-    elsif
-      return :isosceles
-    elsif
-      return :scalene
+    elsif #test for types of triangles!
+    #   first = second = third
+    #   return :equilateral
+    # elsif
+    #   return :isosceles
+    # elsif
+    #   return :scalene
     else
 
     end
