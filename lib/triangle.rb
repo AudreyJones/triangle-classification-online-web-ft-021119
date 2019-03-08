@@ -32,7 +32,11 @@ class Triangle
     array = [first,second,third]
     array_sorted = array.sort
     if array_sorted.include?(0) || (array_sorted[0] + array_sorted[1] <= array_sorted[2])
-
+      begin                                                     #raise the custom error
+        raise TriangleError
+      rescue TriangleError => error
+        puts error.message
+      end
     else #test for types of triangles!
       if (first == second) && (first == third)
         return :equilateral
@@ -40,12 +44,6 @@ class Triangle
         return :isosceles
       elsif (first != second) || (second != third) || (first != third)
         return :scalene
-      else
-        begin                                                     #raise the custom error
-          raise TriangleError
-        rescue TriangleError => error
-          puts error.message
-        end
       end
     end
   end
