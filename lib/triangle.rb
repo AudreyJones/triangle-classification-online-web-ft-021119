@@ -8,7 +8,7 @@ class Triangle
     @second = second
     @third = third
   end
-
+# Can we create a separate method testing for validity and then implement that in #kind ?
   def kind
     if (first + second < third) || (first + third < second)     #if the triangle is invalid(sides <= 0 or violates triangle inequality)
       begin                                                     #raise the custom error
