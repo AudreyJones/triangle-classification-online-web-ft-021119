@@ -7,8 +7,9 @@ class Triangle
     @first = first
     @second = second
     @third = third
+    inequality = (first + second > third) || (first + third > second) || (second + third > first)
   end
-  inequality = (first + second > third) || (first + third > second) || (second + third > first)
+  
 # Can we create a separate method testing for validity and then implement that in #kind ?
   def valid?
     # binding.pry
