@@ -10,7 +10,7 @@ class Triangle
   end
 
   def kind
-    if #the triangle is invalid
+    if #the triangle is invalid(sides <= 0 or violates inequality)
       #raise the custom error
       begin
         raise TriangleError
