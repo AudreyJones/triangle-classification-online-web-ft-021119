@@ -28,8 +28,7 @@ class Triangle
   # end
 
   def kind
-    boolean_array.each {|i|
-      if
+    if
     }
     if valid?
     else #test for types of triangles!
