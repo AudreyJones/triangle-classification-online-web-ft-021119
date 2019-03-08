@@ -18,8 +18,8 @@ class Triangle
         puts error.message
       end
     else #test for types of triangles!
-    #   first = second = third
-    #   return :equilateral
+      if first = second = third
+        return :equilateral
     # elsif
     #   return :isosceles
     # elsif
