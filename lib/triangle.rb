@@ -28,7 +28,7 @@ class Triangle
   # end
 
   def kind
-    if
+    array = [first,second,third]
     }
     if valid?
     else #test for types of triangles!
