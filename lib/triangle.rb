@@ -12,8 +12,8 @@ class Triangle
 
 # Can we create a separate method testing for validity and then implement that in #kind ?
   def valid?
-    
-    if 
+
+    if
       begin                                                     #raise the custom error
         raise TriangleError
       rescue TriangleError => error
