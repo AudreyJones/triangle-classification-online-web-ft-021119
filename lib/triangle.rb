@@ -22,8 +22,8 @@ class Triangle
         return :equilateral
       elsif (first == second) || (second == third) || (first == third)
         return :isosceles
-    # elsif
-    #   return :scalene
+      else
+        return :scalene
       end
     end
   end
