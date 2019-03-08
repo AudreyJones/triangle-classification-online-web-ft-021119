@@ -31,6 +31,12 @@ class Triangle
         return :isosceles
       elsif (first != second) || (second != third) || (first != third)
         return :scalene
+      else
+        begin                                                     #raise the custom error
+          raise TriangleError
+        rescue TriangleError => error
+          puts error.message
+        end
       end
     end
   end
