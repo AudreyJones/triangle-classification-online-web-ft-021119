@@ -12,11 +12,11 @@ class Triangle
   def kind
     # if first + second
     if first = second = third
-      returns :equilateral
+      return :equilateral
     elsif
-      returns :isosceles
+      return :isosceles
     elsif
-      returns :scalene
+      return :scalene
     else
       begin
         raise TriangleError
