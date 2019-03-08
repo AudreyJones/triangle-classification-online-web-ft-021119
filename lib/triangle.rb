@@ -25,6 +25,7 @@ class Triangle
   def kind
     binding.pry
     if valid?
+      pry
     else #test for types of triangles!
       if (first == second) && (first == third)
         return :equilateral
