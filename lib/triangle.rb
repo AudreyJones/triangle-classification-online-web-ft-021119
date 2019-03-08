@@ -10,15 +10,16 @@ class Triangle
   end
 # Can we create a separate method testing for validity and then implement that in #kind ?
   def valid?
-
-  end
-  def kind
-    if (first + second < third) || (first + third < second)     #if the triangle is invalid(sides <= 0 or violates triangle inequality)
+    if (first <= 0) || (second <= 0) || (third <= 0)
       begin                                                     #raise the custom error
         raise TriangleError
       rescue TriangleError => error
         puts error.message
       end
+    elsif 
+  end
+  def kind
+    if valid?
     else #test for types of triangles!
       if (first == second) && (first == third)
         return :equilateral
