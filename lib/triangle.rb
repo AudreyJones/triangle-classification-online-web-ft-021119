@@ -23,7 +23,7 @@ class Triangle
   end
 
   def kind
-    binding.pry
+    # binding.pry
     if valid?
       binding.pry
     else #test for types of triangles!
