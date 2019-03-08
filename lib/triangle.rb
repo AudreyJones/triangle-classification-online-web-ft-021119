@@ -18,7 +18,7 @@ class Triangle
         puts error.message
       end
     else #test for types of triangles!
-      if first = second = third
+      if (first == second) && (first == third)
         return :equilateral
       elsif (first == second) || (second == third)
         return :isosceles
