@@ -34,8 +34,8 @@ class Triangle
     if array_sorted.include?(0) || (array_sorted[0] + array_sorted[1] <= array_sorted[2])
       begin                                                     #raise the custom error
         raise TriangleError
-      rescue TriangleError => error
-        puts error.message
+      # rescue TriangleError => error
+      #   puts error.message
       end
     else #test for types of triangles!
       if (first == second) && (first == third)
