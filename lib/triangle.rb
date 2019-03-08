@@ -8,6 +8,7 @@ class Triangle
     @second = second
     @third = third
   end
+  inequality = (first + second > third) || (first + third > second) || (second + third > first)
 # Can we create a separate method testing for validity and then implement that in #kind ?
   def valid?
     # binding.pry
