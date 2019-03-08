@@ -12,16 +12,19 @@ class Triangle
 
 # Can we create a separate method testing for validity and then implement that in #kind ?
   def valid?
-
-    if @inequality == false
-      begin                                                     #raise the custom error
-        raise TriangleError
-      rescue TriangleError => error
-        puts error.message
+    @inequality.each {|i| 
+      if i == false
+        begin                                                     #raise the custom error
+          raise TriangleError
+        rescue TriangleError => error
+          puts error.message
+        end
+      else
+        "We have a valid triangle!"
       end
-    else
-      "We have a valid triangle!"
-    end
+    }
+    
+      
   end
 
   def kind
