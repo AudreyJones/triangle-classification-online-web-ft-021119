@@ -20,7 +20,7 @@ class Triangle
     else #test for types of triangles!
       if (first == second) && (first == third)
         return :equilateral
-      elsif (first == second) || (second == third)
+      elsif (first == second) || (second == third) || (first == third)
         return :isosceles
     # elsif
     #   return :scalene
