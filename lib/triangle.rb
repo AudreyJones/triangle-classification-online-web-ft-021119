@@ -2,7 +2,7 @@ require 'pry'
 # The sum of the lengths of any two sides of a triangle always exceeds the length
 # of the third side. This is a principle known as the _triangle inequality_.
 class Triangle
-  attr_accessor :first, :second, :third
+  attr_accessor :first, :second, :third, :inequality
   def initialize(first, second, third)
     @first = first
     @second = second
@@ -12,8 +12,8 @@ class Triangle
 
 # Can we create a separate method testing for validity and then implement that in #kind ?
   def valid?
-    # binding.pry
-    if (first <= 0) || (second <= 0) || (third <= 0)
+    
+    if 
       begin                                                     #raise the custom error
         raise TriangleError
       rescue TriangleError => error
