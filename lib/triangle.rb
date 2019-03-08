@@ -11,23 +11,26 @@ class Triangle
   end
 
 # Can we create a separate method testing for validity and then implement that in #kind ?
-  def valid?
-    boolean_array = @inequality.map {|i|
-      if i == false
-        begin                                                     #raise the custom error
-          raise TriangleError
-        rescue TriangleError => error
-          puts error.message
-        end
-      else
-        "We have a valid triangle!"
-      end
-    }
-
-
-  end
+  # def valid?
+  #   boolean_array = @inequality.map {|i|
+  #     if i == false
+  #       begin                                                     #raise the custom error
+  #         raise TriangleError
+  #       rescue TriangleError => error
+  #         puts error.message
+  #       end
+  #     else
+  #       "We have a valid triangle!"
+  #     end
+  #   }
+  # 
+  # 
+  # end
 
   def kind
+    boolean_array.each {|i|
+      if 
+    }
     if valid?
     else #test for types of triangles!
       if (first == second) && (first == third)
